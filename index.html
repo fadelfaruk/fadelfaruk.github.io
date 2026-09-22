@@ -12,15 +12,13 @@
       theme: {
         extend: {
           colors: {
-            obsidian: '#0B0C10',
-            charcoal: '#1F2833',
-            electricCyan: '#00FFFF',
-            softTeal: '#66FCF1',
-            slateText: '#C5C6C7',
+            bone: '#EFEFE9',
+            deepSlate: '#223030',
+            earthBrown: '#523D35',
           },
           boxShadow: {
-            'cyan-glow': '0 0 25px -5px rgba(0, 255, 255, 0.35)',
-            'cyan-card': '0 8px 32px 0 rgba(0, 255, 255, 0.08)',
+            'earth-card': '0 10px 30px -5px rgba(34, 48, 48, 0.08)',
+            'earth-glow': '0 0 25px -5px rgba(82, 61, 53, 0.25)',
           }
         }
       }
@@ -38,30 +36,30 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0B0C10;
-      color: #C5C6C7;
+      background-color: #EFEFE9;
+      color: #523D35;
     }
     h1, h2, h3, .font-heading {
       font-family: 'Space Grotesk', sans-serif;
     }
   </style>
 </head>
-<body class="selection:bg-electricCyan selection:text-obsidian">
+<body class="bg-bone text-earthBrown selection:bg-deepSlate selection:text-bone">
 
   <!-- Frosted Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-obsidian/80 border-b border-softTeal/10">
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-bone/85 border-b border-deepSlate/10">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-electricCyan transition-colors">
-        FADEL<span class="text-electricCyan">.</span>
+      <a href="#" class="text-xl font-bold tracking-tight text-deepSlate hover:text-earthBrown transition-colors">
+        FADEL<span class="text-earthBrown">.</span>
       </a>
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-        <a href="#about" class="hover:text-electricCyan transition-colors">About</a>
-        <a href="#academics" class="hover:text-electricCyan transition-colors">Academics</a>
-        <a href="#experience" class="hover:text-electricCyan transition-colors">Experience</a>
-        <a href="#projects" class="hover:text-electricCyan transition-colors">Projects</a>
-        <a href="#extracurricular" class="hover:text-electricCyan transition-colors">Activities</a>
+        <a href="#about" class="text-deepSlate/80 hover:text-deepSlate transition-colors">About</a>
+        <a href="#academics" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Academics</a>
+        <a href="#experience" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Experience</a>
+        <a href="#projects" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Projects</a>
+        <a href="#extracurricular" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Activities</a>
       </div>
-      <a href="#projects" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-obsidian bg-electricCyan rounded-md shadow-cyan-glow hover:bg-softTeal transition-all">
+      <a href="#projects" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone bg-deepSlate rounded-md shadow-sm hover:bg-earthBrown transition-all">
         View Work
       </a>
     </div>
@@ -72,121 +70,121 @@
     <!-- 1. Hero Section -->
     <section id="about" class="min-h-[75vh] flex flex-col-reverse md:flex-row items-center justify-between gap-12">
       <div class="w-full md:w-3/5 space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-softTeal/30 bg-charcoal/40 text-electricCyan text-xs tracking-wide">
-          <span class="w-2 h-2 rounded-full bg-electricCyan animate-pulse"></span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-deepSlate/15 bg-white/70 text-deepSlate text-xs tracking-wide shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-earthBrown animate-pulse"></span>
           Electrical & Electronic Engineer
         </div>
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight">
-          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricCyan to-softTeal">Md Fadel Faruk</span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-deepSlate leading-tight">
+          Hi, I'm <span class="text-earthBrown">Md Fadel Faruk</span>[cite: 1]
         </h1>
-        <p class="text-lg text-slateText leading-relaxed">
-          BUET graduate in Electrical and Electronic Engineering specializing in telecom infrastructure, spectrum and QoS policy, plasmonic biosensors, and RF/microwave engineering.
+        <p class="text-lg text-earthBrown/90 leading-relaxed font-normal">
+          BUET graduate in Electrical and Electronic Engineering specializing in telecom infrastructure, spectrum and QoS policy, plasmonic biosensors, and RF/microwave engineering[cite: 1].
         </p>
         <div class="flex items-center gap-4 pt-2">
-          <a href="#projects" class="px-6 py-3 rounded-lg bg-electricCyan text-obsidian font-semibold hover:bg-softTeal transition-all shadow-cyan-glow">
+          <a href="#projects" class="px-6 py-3 rounded-lg bg-deepSlate text-bone font-semibold hover:bg-earthBrown transition-all shadow-md">
             Explore My Work
           </a>
-          <a href="#experience" class="px-6 py-3 rounded-lg border border-softTeal/30 text-white hover:border-electricCyan transition-colors">
+          <a href="#experience" class="px-6 py-3 rounded-lg border border-deepSlate/30 text-deepSlate hover:bg-deepSlate hover:text-bone transition-all">
             View Experience
           </a>
         </div>
         <!-- Contact & Links -->
-        <div class="flex items-center gap-6 pt-4 text-sm text-slateText">
-          <a href="mailto:fadelfaruk1864@gmail.com" class="flex items-center gap-2 hover:text-electricCyan transition-colors">
-            <i data-lucide="mail" class="w-4 h-4 text-electricCyan"></i> fadelfaruk1864@gmail.com
+        <div class="flex flex-wrap items-center gap-6 pt-4 text-sm text-earthBrown">
+          <a href="mailto:fadelfaruk1864@gmail.com" class="flex items-center gap-2 hover:text-deepSlate transition-colors">
+            <i data-lucide="mail" class="w-4 h-4 text-deepSlate"></i> fadelfaruk1864@gmail.com[cite: 1]
           </a>
-          <a href="https://linkedin.com/in/md-fadel-faruk" target="_blank" class="flex items-center gap-2 hover:text-electricCyan transition-colors">
-            <i data-lucide="linkedin" class="w-4 h-4 text-electricCyan"></i> md-fadel-faruk
+          <a href="https://linkedin.com/in/md-fadel-faruk" target="_blank" class="flex items-center gap-2 hover:text-deepSlate transition-colors">
+            <i data-lucide="linkedin" class="w-4 h-4 text-deepSlate"></i> md-fadel-faruk[cite: 1]
           </a>
         </div>
       </div>
       <div class="w-full md:w-2/5 flex justify-center">
         <div class="relative w-64 h-64 sm:w-72 sm:h-72">
-          <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-electricCyan to-transparent blur-xl opacity-30"></div>
-          <img src="profile.jpg" alt="Md Fadel Faruk" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=600&h=600'" class="relative w-full h-full object-cover rounded-2xl border-2 border-electricCyan/40 shadow-cyan-glow" />
+          <div class="absolute inset-0 rounded-2xl bg-earthBrown/10 blur-xl"></div>
+          <img src="profile.jpg" alt="Md Fadel Faruk" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=600&h=600'" class="relative w-full h-full object-cover rounded-2xl border-2 border-deepSlate/20 shadow-earth-card" />
         </div>
       </div>
     </section>
 
     <!-- 2. Academics Section -->
     <section id="academics" class="space-y-12">
-      <div class="border-l-2 border-electricCyan pl-4">
-        <h2 class="text-3xl font-bold text-white tracking-wide">Academics</h2>
-        <p class="text-sm text-slateText mt-1">Educational qualifications and thesis research</p>
+      <div class="border-l-2 border-deepSlate pl-4">
+        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Academics</h2>
+        <p class="text-sm text-earthBrown mt-1">Educational qualifications and thesis research</p>
       </div>
 
-      <div class="relative border-l border-charcoal/80 ml-4 space-y-10 pl-8">
+      <div class="relative border-l border-deepSlate/20 ml-4 space-y-10 pl-8">
         <!-- Academic Item 1: BUET -->
         <div class="relative">
-          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-electricCyan bg-obsidian shadow-cyan-glow"></div>
-          <span class="text-xs uppercase tracking-wider text-electricCyan font-semibold">Apr 2019 – Jul 2024</span>
-          <h3 class="text-xl font-bold text-white mt-1">B.Sc. in Electrical and Electronic Engineering</h3>
-          <p class="text-sm text-softTeal">Bangladesh University of Engineering and Technology (BUET) | CGPA: 3.18 / 4.00</p>
-          <div class="mt-3 p-4 rounded-lg bg-charcoal/30 border border-softTeal/10 text-sm text-slateText space-y-2">
-            <p class="font-semibold text-white text-xs uppercase tracking-wide text-electricCyan">Undergraduate Thesis (Oct 2023 – Jul 2024):</p>
-            <p><strong class="text-white">Design and Performance Analysis of Elliptical Nanorod Array Plasmonic Biosensor</strong></p>
-            <p>Developed a Metal-Insulator-Metal (MIM) based elliptical nanorod plasmonic biosensor using FDTD simulations. Optimized structural parameters to enhance localized surface plasmon resonance. Achieved sensitivity of 212.93 nm/RIU, FOM of 4.65, and Q-factor of 17.035 with Al₂O₃ insulator for advanced biochemical detection.</p>
+          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-deepSlate bg-bone"></div>
+          <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold">Apr 2019 – Jul 2024</span>[cite: 1]
+          <h3 class="text-xl font-bold text-deepSlate mt-1">B.Sc. in Electrical and Electronic Engineering</h3>[cite: 1]
+          <p class="text-sm font-medium text-deepSlate/85">Bangladesh University of Engineering and Technology (BUET) | CGPA: 3.18 / 4.00</p>[cite: 1]
+          <div class="mt-3 p-5 rounded-lg bg-white/60 border border-deepSlate/10 text-sm text-earthBrown space-y-2 shadow-sm">
+            <p class="font-semibold text-deepSlate text-xs uppercase tracking-wide">Undergraduate Thesis (Oct 2023 – Jul 2024):</p>[cite: 1]
+            <p><strong class="text-deepSlate">Design and Performance Analysis of Elliptical Nanorod Array Plasmonic Biosensor</strong></p>[cite: 1]
+            <p>Developed a Metal-Insulator-Metal (MIM) based elliptical nanorod plasmonic biosensor using FDTD simulations[cite: 1]. Optimized structural parameters to enhance localized surface plasmon resonance[cite: 1]. Achieved sensitivity of 212.93 nm/RIU, FOM of 4.65, and Q-factor of 17.035 with Al₂O₃ insulator for advanced biochemical detection[cite: 1].</p>
           </div>
         </div>
 
         <!-- Academic Item 2: Rangpur Cadet College -->
         <div class="relative">
-          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-softTeal bg-obsidian"></div>
-          <span class="text-xs uppercase tracking-wider text-electricCyan font-semibold">Mar 2012 – May 2018</span>
-          <h3 class="text-xl font-bold text-white mt-1">Higher Secondary Certificate (HSC) & SSC</h3>
-          <p class="text-sm text-softTeal">Rangpur Cadet College | GPA: 5.00 / 5.00 (Both)</p>
-          <p class="text-sm text-slateText mt-2">Recipient of the Merit Scholarship in Higher Secondary Certificate Examination.</p>
+          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-earthBrown bg-bone"></div>
+          <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold">Mar 2012 – May 2018</span>[cite: 1]
+          <h3 class="text-xl font-bold text-deepSlate mt-1">Higher Secondary Certificate (HSC) & SSC</h3>[cite: 1]
+          <p class="text-sm font-medium text-deepSlate/85">Rangpur Cadet College | GPA: 5.00 / 5.00 (Both)</p>[cite: 1]
+          <p class="text-sm text-earthBrown mt-2">Recipient of the Merit Scholarship in Higher Secondary Certificate Examination[cite: 1].</p>
         </div>
       </div>
     </section>
 
     <!-- 3. Job Experience Section -->
     <section id="experience" class="space-y-12">
-      <div class="border-l-2 border-electricCyan pl-4">
-        <h2 class="text-3xl font-bold text-white tracking-wide">Work Experience</h2>
-        <p class="text-sm text-slateText mt-1">Industry roles in telecommunications & technology management</p>
+      <div class="border-l-2 border-deepSlate pl-4">
+        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Work Experience</h2>
+        <p class="text-sm text-earthBrown mt-1">Industry roles in telecommunications & technology management</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Experience Card 1: Robi Axiata -->
-        <div class="p-6 rounded-xl bg-charcoal/30 border border-softTeal/20 hover:border-electricCyan/60 transition-all hover:-translate-y-1 shadow-cyan-card">
+        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card">
           <div class="flex justify-between items-start">
             <div>
-              <h3 class="text-xl font-bold text-white">Senior Associate</h3>
-              <p class="text-xs text-softTeal font-medium mt-0.5">Infrastructure & QoS Policy and Technical Support</p>
-              <p class="text-sm text-slateText mt-1">Robi Axiata PLC</p>
+              <h3 class="text-xl font-bold text-deepSlate">Senior Associate</h3>[cite: 1]
+              <p class="text-xs text-earthBrown font-medium mt-0.5">Infrastructure & QoS Policy and Technical Support</p>[cite: 1]
+              <p class="text-sm font-semibold text-deepSlate/80 mt-1">Robi Axiata PLC</p>[cite: 1]
             </div>
-            <span class="text-xs text-electricCyan px-2 py-1 rounded bg-obsidian border border-electricCyan/20 whitespace-nowrap">Feb 2025 – Present</span>
+            <span class="text-xs text-deepSlate px-2.5 py-1 rounded bg-bone border border-deepSlate/15 whitespace-nowrap font-medium">Feb 2025 – Present</span>[cite: 1]
           </div>
-          <ul class="mt-5 space-y-2.5 text-sm text-slateText">
+          <ul class="mt-5 space-y-2.5 text-sm text-earthBrown">
             <li class="flex items-start gap-2">
-              <span class="text-electricCyan font-bold">›</span> Manage telecom infrastructure, spectrum acquisition, and international benchmark studies supporting spectrum policy advocacy.
+              <span class="text-deepSlate font-bold">›</span> Manage telecom infrastructure, spectrum acquisition, and international benchmark studies supporting spectrum policy advocacy[cite: 1].
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-electricCyan font-bold">›</span> Ensure compliance with network Quality of Service (QoS) regulations and telecom licensing obligations.
+              <span class="text-deepSlate font-bold">›</span> Ensure compliance with network Quality of Service (QoS) regulations and telecom licensing obligations[cite: 1].
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-electricCyan font-bold">›</span> Supervise technical complaint management workflows for rapid resolution across networks.
+              <span class="text-deepSlate font-bold">›</span> Supervise technical complaint management workflows for rapid resolution across networks[cite: 1].
             </li>
           </ul>
         </div>
 
         <!-- Experience Card 2: Banglalink -->
-        <div class="p-6 rounded-xl bg-charcoal/30 border border-softTeal/20 hover:border-electricCyan/60 transition-all hover:-translate-y-1 shadow-cyan-card">
+        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card">
           <div class="flex justify-between items-start">
             <div>
-              <h3 class="text-xl font-bold text-white">Digitalyst Intern</h3>
-              <p class="text-xs text-softTeal font-medium mt-0.5">Technology Financial Management</p>
-              <p class="text-sm text-slateText mt-1">Banglalink Digital Communications Ltd.</p>
+              <h3 class="text-xl font-bold text-deepSlate">Digitalyst Intern</h3>[cite: 1]
+              <p class="text-xs text-earthBrown font-medium mt-0.5">Technology Financial Management</p>[cite: 1]
+              <p class="text-sm font-semibold text-deepSlate/80 mt-1">Banglalink Digital Communications Ltd.</p>[cite: 1]
             </div>
-            <span class="text-xs text-electricCyan px-2 py-1 rounded bg-obsidian border border-electricCyan/20 whitespace-nowrap">May 2024 – Aug 2024</span>
+            <span class="text-xs text-deepSlate px-2.5 py-1 rounded bg-bone border border-deepSlate/15 whitespace-nowrap font-medium">May 2024 – Aug 2024</span>[cite: 1]
           </div>
-          <ul class="mt-5 space-y-2.5 text-sm text-slateText">
+          <ul class="mt-5 space-y-2.5 text-sm text-earthBrown">
             <li class="flex items-start gap-2">
-              <span class="text-electricCyan font-bold">›</span> Assisted core operations in Banglalink's major nationwide telecom tower handover to Summit Towers Ltd.
+              <span class="text-deepSlate font-bold">›</span> Assisted core operations in Banglalink's major nationwide telecom tower handover to Summit Towers Ltd[cite: 1].
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-electricCyan font-bold">›</span> Streamlined documentation, asset data tracking, and vendor coordination to optimize project execution workflows.
+              <span class="text-deepSlate font-bold">›</span> Streamlined documentation, asset data tracking, and vendor coordination to optimize project execution workflows[cite: 1].
             </li>
           </ul>
         </div>
@@ -195,80 +193,80 @@
 
     <!-- 4. Projects Section -->
     <section id="projects" class="space-y-12">
-      <div class="border-l-2 border-electricCyan pl-4">
-        <h2 class="text-3xl font-bold text-white tracking-wide">Featured Projects</h2>
-        <p class="text-sm text-slateText mt-1">Engineering systems, robotics, and RF/microwave designs</p>
+      <div class="border-l-2 border-deepSlate pl-4">
+        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Featured Projects</h2>
+        <p class="text-sm text-earthBrown mt-1">Engineering systems, robotics, and RF/microwave designs</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Project 1: Microstrip Patch Antenna -->
-        <div class="group rounded-xl overflow-hidden bg-charcoal/40 border border-softTeal/20 hover:border-electricCyan/80 transition-all">
-          <div class="h-44 bg-gradient-to-br from-charcoal to-obsidian flex items-center justify-center p-6 border-b border-softTeal/10">
-            <i data-lucide="radio" class="w-16 h-16 text-electricCyan group-hover:scale-110 transition-transform"></i>
+        <div class="group rounded-xl overflow-hidden bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <div class="h-44 bg-deepSlate/5 flex items-center justify-center p-6 border-b border-deepSlate/10">
+            <i data-lucide="radio" class="w-16 h-16 text-deepSlate group-hover:scale-110 transition-transform"></i>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white group-hover:text-electricCyan transition-colors">Novel Multiband Microstrip Patch Antenna</h3>
-            <p class="text-sm text-slateText leading-relaxed">
-              Designed and evaluated radiation patterns and efficiency of a MIMO patch antenna with 3 resonant peaks for 5G communications and space applications such as radio astronomy.
+            <h3 class="text-xl font-bold text-deepSlate group-hover:text-earthBrown transition-colors">Novel Multiband Microstrip Patch Antenna</h3>[cite: 1]
+            <p class="text-sm text-earthBrown leading-relaxed">
+              Designed and evaluated radiation patterns and efficiency of a MIMO patch antenna with 3 resonant peaks for 5G communications and space applications such as radio astronomy[cite: 1].
             </p>
             <div class="flex flex-wrap gap-2 pt-2">
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">ANSYS HFSS</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">MIMO</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">5G & RF</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ANSYS HFSS</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">MIMO</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">5G & RF</span>[cite: 1]
             </div>
           </div>
         </div>
 
         <!-- Project 2: Spider Robot -->
-        <div class="group rounded-xl overflow-hidden bg-charcoal/40 border border-softTeal/20 hover:border-electricCyan/80 transition-all">
-          <div class="h-44 bg-gradient-to-br from-charcoal to-obsidian flex items-center justify-center p-6 border-b border-softTeal/10">
-            <i data-lucide="bot" class="w-16 h-16 text-electricCyan group-hover:scale-110 transition-transform"></i>
+        <div class="group rounded-xl overflow-hidden bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <div class="h-44 bg-deepSlate/5 flex items-center justify-center p-6 border-b border-deepSlate/10">
+            <i data-lucide="bot" class="w-16 h-16 text-deepSlate group-hover:scale-110 transition-transform"></i>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white group-hover:text-electricCyan transition-colors">Multi-Legged Spider Robot</h3>
-            <p class="text-sm text-slateText leading-relaxed">
-              Engineered a multi-legged robot mimicking arachnid locomotion using Arduino Nano, ESP32-CAM, and 12 servo motors, featuring remote surveillance and rough terrain navigation.
+            <h3 class="text-xl font-bold text-deepSlate group-hover:text-earthBrown transition-colors">Multi-Legged Spider Robot</h3>[cite: 1]
+            <p class="text-sm text-earthBrown leading-relaxed">
+              Engineered a multi-legged robot mimicking arachnid locomotion using Arduino Nano, ESP32-CAM, and 12 servo motors, featuring remote surveillance and rough terrain navigation[cite: 1].
             </p>
             <div class="flex flex-wrap gap-2 pt-2">
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Arduino</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">ESP32-CAM</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Robotics</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Arduino</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ESP32-CAM</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Robotics</span>
             </div>
           </div>
         </div>
 
         <!-- Project 3: ECG Heartbeat Classification -->
-        <div class="group rounded-xl overflow-hidden bg-charcoal/40 border border-softTeal/20 hover:border-electricCyan/80 transition-all">
-          <div class="h-44 bg-gradient-to-br from-charcoal to-obsidian flex items-center justify-center p-6 border-b border-softTeal/10">
-            <i data-lucide="activity" class="w-16 h-16 text-electricCyan group-hover:scale-110 transition-transform"></i>
+        <div class="group rounded-xl overflow-hidden bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <div class="h-44 bg-deepSlate/5 flex items-center justify-center p-6 border-b border-deepSlate/10">
+            <i data-lucide="activity" class="w-16 h-16 text-deepSlate group-hover:scale-110 transition-transform"></i>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white group-hover:text-electricCyan transition-colors">ECG Heartbeat Classification</h3>
-            <p class="text-sm text-slateText leading-relaxed">
-              Developed a machine learning classification pipeline to process raw electrocardiogram (ECG) signals and identify abnormal cardiac conditions automatically.
+            <h3 class="text-xl font-bold text-deepSlate group-hover:text-earthBrown transition-colors">ECG Heartbeat Classification</h3>[cite: 1]
+            <p class="text-sm text-earthBrown leading-relaxed">
+              Developed a machine learning classification pipeline to process raw electrocardiogram (ECG) signals and identify abnormal cardiac conditions automatically[cite: 1].
             </p>
             <div class="flex flex-wrap gap-2 pt-2">
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Python</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Machine Learning</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Signal Processing</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Python</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Machine Learning</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Signal Processing</span>[cite: 1]
             </div>
           </div>
         </div>
 
         <!-- Project 4: Self-Balancing Bicycle Robot -->
-        <div class="group rounded-xl overflow-hidden bg-charcoal/40 border border-softTeal/20 hover:border-electricCyan/80 transition-all">
-          <div class="h-44 bg-gradient-to-br from-charcoal to-obsidian flex items-center justify-center p-6 border-b border-softTeal/10">
-            <i data-lucide="cpu" class="w-16 h-16 text-electricCyan group-hover:scale-110 transition-transform"></i>
+        <div class="group rounded-xl overflow-hidden bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <div class="h-44 bg-deepSlate/5 flex items-center justify-center p-6 border-b border-deepSlate/10">
+            <i data-lucide="cpu" class="w-16 h-16 text-deepSlate group-hover:scale-110 transition-transform"></i>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-xl font-bold text-white group-hover:text-electricCyan transition-colors">Reaction-Wheel Self-Balancing Bicycle</h3>
-            <p class="text-sm text-slateText leading-relaxed">
-              Designed a dynamic stability bicycle robot utilizing a high-speed reaction wheel to apply counter-torque based on real-time tilt orientation measurements.
+            <h3 class="text-xl font-bold text-deepSlate group-hover:text-earthBrown transition-colors">Reaction-Wheel Self-Balancing Bicycle</h3>[cite: 1]
+            <p class="text-sm text-earthBrown leading-relaxed">
+              Designed a dynamic stability bicycle robot utilizing a high-speed reaction wheel to apply counter-torque based on real-time tilt orientation measurements[cite: 1].
             </p>
             <div class="flex flex-wrap gap-2 pt-2">
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Control Systems</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Embedded C</span>
-              <span class="text-xs px-2.5 py-1 rounded bg-obsidian border border-softTeal/30 text-softTeal">Simulink</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Control Systems</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Embedded C</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Simulink</span>[cite: 1]
             </div>
           </div>
         </div>
@@ -277,34 +275,34 @@
 
     <!-- 5. Extra-Curricular Activities -->
     <section id="extracurricular" class="space-y-12">
-      <div class="border-l-2 border-electricCyan pl-4">
-        <h2 class="text-3xl font-bold text-white tracking-wide">Leadership & Activities</h2>
-        <p class="text-sm text-slateText mt-1">Competitions, organizing roles, and community initiatives</p>
+      <div class="border-l-2 border-deepSlate pl-4">
+        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Leadership & Activities</h2>
+        <p class="text-sm text-earthBrown mt-1">Competitions, organizing roles, and community initiatives</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <!-- Activity 1 -->
-        <div class="p-6 rounded-xl bg-charcoal/20 border border-softTeal/10 hover:border-softTeal/40 transition-all">
-          <i data-lucide="calendar" class="w-6 h-6 text-electricCyan mb-4"></i>
-          <h3 class="text-lg font-semibold text-white">EEE Day 2024 Organizer</h3>
-          <p class="text-xs text-softTeal mt-1">BUET EEE Department</p>
-          <p class="text-sm text-slateText mt-3">Organized and managed high-impact flagship events in collaboration with Grameenphone, Huawei, and Fiber@Home.</p>
+        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <i data-lucide="calendar" class="w-6 h-6 text-deepSlate mb-4"></i>
+          <h3 class="text-lg font-semibold text-deepSlate">EEE Day 2024 Organizer</h3>[cite: 1]
+          <p class="text-xs text-earthBrown font-medium mt-1">BUET EEE Department</p>[cite: 1]
+          <p class="text-sm text-earthBrown mt-3">Organized and managed high-impact flagship events in collaboration with Grameenphone, Huawei, and Fiber@Home[cite: 1].</p>
         </div>
 
         <!-- Activity 2 -->
-        <div class="p-6 rounded-xl bg-charcoal/20 border border-softTeal/10 hover:border-softTeal/40 transition-all">
-          <i data-lucide="award" class="w-6 h-6 text-electricCyan mb-4"></i>
-          <h3 class="text-lg font-semibold text-white">ISCEA PTAK Scholarship</h3>
-          <p class="text-xs text-softTeal mt-1">Prize Winner</p>
-          <p class="text-sm text-slateText mt-3">Awarded a competitive scholarship for the Certified Supply Chain Analyst (CSCA) program based on competition performance.</p>
+        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <i data-lucide="award" class="w-6 h-6 text-deepSlate mb-4"></i>
+          <h3 class="text-lg font-semibold text-deepSlate">ISCEA PTAK Scholarship</h3>[cite: 1]
+          <p class="text-xs text-earthBrown font-medium mt-1">Prize Winner</p>[cite: 1]
+          <p class="text-sm text-earthBrown mt-3">Awarded a competitive scholarship for the Certified Supply Chain Analyst (CSCA) program based on competition performance[cite: 1].</p>
         </div>
 
         <!-- Activity 3 -->
-        <div class="p-6 rounded-xl bg-charcoal/20 border border-softTeal/10 hover:border-softTeal/40 transition-all">
-          <i data-lucide="mic" class="w-6 h-6 text-electricCyan mb-4"></i>
-          <h3 class="text-lg font-semibold text-white">Inter Faculty Debate</h3>
-          <p class="text-xs text-softTeal mt-1">BUET Debating Club</p>
-          <p class="text-sm text-slateText mt-3">Represented the Faculty of Electrical and Electronic Engineering in the 14th Inter Faculty Debate Championship.</p>
+        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
+          <i data-lucide="mic" class="w-6 h-6 text-deepSlate mb-4"></i>
+          <h3 class="text-lg font-semibold text-deepSlate">Inter Faculty Debate</h3>[cite: 1]
+          <p class="text-xs text-earthBrown font-medium mt-1">BUET Debating Club</p>[cite: 1]
+          <p class="text-sm text-earthBrown mt-3">Represented the Faculty of Electrical and Electronic Engineering in the 14th Inter Faculty Debate Championship[cite: 1].</p>
         </div>
       </div>
     </section>
@@ -312,7 +310,7 @@
   </main>
 
   <!-- Minimal Footer -->
-  <footer class="border-t border-charcoal/80 py-8 text-center text-xs text-slateText">
+  <footer class="border-t border-deepSlate/15 py-8 text-center text-xs text-earthBrown">
     <p>© 2026 Md Fadel Faruk. Hosted on GitHub Pages.</p>
   </footer>
 
