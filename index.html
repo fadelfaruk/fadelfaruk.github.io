@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md. Fadel Faruk | Portfolio</title>
+  <title>Md. Fadel Faruk | Home</title>
   
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -18,47 +17,35 @@
           },
           boxShadow: {
             'earth-card': '0 10px 30px -5px rgba(34, 48, 48, 0.08)',
-            'earth-glow': '0 0 25px -5px rgba(82, 61, 53, 0.25)',
           }
         }
       }
     }
   </script>
-
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #EFEFE9;
-      color: #523D35;
-    }
-    h1, h2, h3, .font-heading {
-      font-family: 'Space Grotesk', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; background-color: #EFEFE9; color: #523D35; }
+    h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
   </style>
 </head>
 <body class="bg-bone text-earthBrown selection:bg-deepSlate selection:text-bone">
 
-  <!-- Frosted Navigation -->
+  <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-bone/85 border-b border-deepSlate/10">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold tracking-tight text-deepSlate hover:text-earthBrown transition-colors">
+      <a href="index.html" class="text-xl font-bold tracking-tight text-deepSlate hover:text-earthBrown transition-colors">
         FADEL<span class="text-earthBrown">.</span>
       </a>
       <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
-        <a href="#about" class="text-deepSlate/80 hover:text-deepSlate transition-colors">About</a>
-        <a href="#research" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Research</a>
-        <a href="#academics" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Academics</a>
-        <a href="#experience" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Experience</a>
-        <a href="#projects" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Projects</a>
-        <a href="#extracurricular" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Activities</a>
+        <a href="index.html" class="text-deepSlate font-semibold border-b-2 border-deepSlate pb-0.5">Home</a>
+        <a href="research.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Research</a>
+        <a href="academics.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Academics</a>
+        <a href="experience.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Experience</a>
+        <a href="projects.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Projects</a>
+        <a href="extracurricular.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Activities</a>
       </div>
       <a href="https://drive.google.com/file/d/1j78e1rBoakk9E5yI0I3NkWvwenQ_srrJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone bg-deepSlate rounded-md shadow-sm hover:bg-earthBrown transition-all">
         <i data-lucide="download" class="w-3.5 h-3.5"></i> Download CV
@@ -66,51 +53,46 @@
     </div>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-6 pt-28 sm:pt-36 pb-24 space-y-28 sm:space-y-36">
-
-    <!-- 1. Hero / Intro Section -->
-    <section id="about" class="min-h-[75vh] flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+  <!-- Hero Content -->
+  <main class="max-w-6xl mx-auto px-6 pt-32 sm:pt-40 pb-24 space-y-24">
+    <section class="min-h-[70vh] flex flex-col-reverse md:flex-row items-center justify-between gap-12">
       <div class="w-full md:w-3/5 space-y-5">
         <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-deepSlate/15 bg-white/70 text-deepSlate text-xs tracking-wide shadow-sm">
           <span class="w-2 h-2 rounded-full bg-earthBrown animate-pulse"></span>
           Electrical & Electronic Engineer
         </div>
-        
         <div>
           <span class="text-base sm:text-lg font-medium text-earthBrown/80 block">Hi! Welcome to my corner of the web!</span>
           <h1 class="text-3xl sm:text-5xl font-extrabold text-deepSlate tracking-tight mt-1 leading-tight">
-            This is <span class="text-earthBrown">Md. Fadel Faruk</span>
+            This is <span class="text-earthBrown">Md. Fadel Faruk</span>[cite: 1]
           </h1>
         </div>
-
-        <p class="text-base sm:text-lg text-earthBrown/95 leading-relaxed font-normal">
-          An Electrical and Electronic Engineering graduate from Bangladesh University of Engineering and Technology (BUET). Currently I am working for Robi Axiata PLC., the second largest mobile operator in the country.
+        <p class="text-base sm:text-lg text-earthBrown/95 leading-relaxed">
+          An Electrical and Electronic Engineering graduate from Bangladesh University of Engineering and Technology (BUET)[cite: 1]. Currently I am working for Robi Axiata PLC., the second largest mobile operator in the country[cite: 1].
         </p>
-
-        <p class="text-sm sm:text-base text-earthBrown/90 leading-relaxed font-normal">
-          With a strong foundation in technology and industry experience, I constantly strive to grow both personally and professionally, guided by a simple mantra: 
+        <p class="text-sm sm:text-base text-earthBrown/90 leading-relaxed">
+          With a strong foundation in technology and industry experience, I constantly strive to grow both personally and professionally, guided by a simple mantra:
           <em class="text-deepSlate font-medium block mt-1">"Driven to excel, diligent in effort, adaptable to every challenge."</em>
         </p>
-
+        
         <div class="flex flex-wrap items-center gap-3.5 pt-2">
-          <a href="https://drive.google.com/file/d/1j78e1rBoakk9E5yI0I3NkWvwenQ_srrJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-deepSlate text-bone text-sm font-semibold hover:bg-earthBrown transition-all shadow-md">
-            <i data-lucide="file-text" class="w-4 h-4"></i> Download CV
+          <a href="projects.html" class="px-5 py-2.5 rounded-lg bg-deepSlate text-bone text-sm font-semibold hover:bg-earthBrown transition-all shadow-md">
+            View All Projects
           </a>
-          <a href="#research" class="px-5 py-2.5 rounded-lg border border-deepSlate/30 text-deepSlate text-sm font-medium hover:bg-deepSlate hover:text-bone transition-all">
+          <a href="research.html" class="px-5 py-2.5 rounded-lg border border-deepSlate/30 text-deepSlate text-sm font-medium hover:bg-deepSlate hover:text-bone transition-all">
             Explore Research
           </a>
         </div>
 
-        <!-- Contact Info with Official LinkedIn Logo -->
         <div class="flex flex-wrap items-center gap-6 pt-3 text-sm text-earthBrown border-t border-deepSlate/10">
           <a href="mailto:fadelfaruk1864@gmail.com" class="flex items-center gap-2 text-deepSlate hover:text-earthBrown transition-colors font-medium">
-            <i data-lucide="mail" class="w-4 h-4 text-earthBrown"></i> fadelfaruk1864@gmail.com
+            <i data-lucide="mail" class="w-4 h-4 text-earthBrown"></i> fadelfaruk1864@gmail.com[cite: 1]
           </a>
           <a href="https://www.linkedin.com/in/md-fadel-faruk/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-deepSlate hover:text-earthBrown transition-colors font-medium">
             <svg class="w-4 h-4 fill-current text-[#0A66C2]" viewBox="0 0 24 24">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
-            <span>md-fadel-faruk</span>
+            <span>md-fadel-faruk</span>[cite: 1]
           </a>
         </div>
       </div>
@@ -123,477 +105,51 @@
       </div>
     </section>
 
-    <!-- 2. Research Experience Section -->
-    <section id="research" class="space-y-8">
-      <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Research Experience</h2>
-        <p class="text-sm text-earthBrown mt-1">Undergraduate thesis, simulations, and optical nanostructures</p>
-      </div>
+    <!-- Quick Navigation Hub -->
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold text-deepSlate tracking-wide">Explore Categories</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="research.html" class="p-6 rounded-2xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card block">
+          <i data-lucide="microscope" class="w-6 h-6 text-deepSlate mb-3"></i>
+          <h3 class="text-lg font-bold text-deepSlate">Research Experience</h3>
+          <p class="text-sm text-earthBrown/80 mt-1">Undergraduate thesis on Elliptical Nanorod MIM Plasmonic Biosensors[cite: 1].</p>
+          <span class="text-xs font-semibold text-deepSlate inline-block mt-3">Learn More →</span>
+        </a>
 
-      <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
-          <div>
-            <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">Undergraduate Thesis • Oct 2023 – Jul 2024[cite: 1]</span>
-            <h3 class="text-xl sm:text-2xl font-bold text-deepSlate mt-1">
-              Design and Performance Analysis of Elliptical Nanorod Array Plasmonic Biosensor[cite: 1]
-            </h3>
-            <p class="text-xs sm:text-sm text-deepSlate/80 mt-0.5">Bangladesh University of Engineering and Technology (BUET)[cite: 1]</p>
-          </div>
-          <a href="https://docs.google.com/presentation/d/11_8cqJYn8cDRZRL3HaJYhNfACrc1NcX9/edit?usp=drivesdk&ouid=109082213126500722372&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-deepSlate text-bone text-xs sm:text-sm font-semibold hover:bg-earthBrown transition-all shadow-sm whitespace-nowrap">
-            <i data-lucide="presentation" class="w-4 h-4"></i> View Presentation
-          </a>
-        </div>
+        <a href="academics.html" class="p-6 rounded-2xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card block">
+          <i data-lucide="graduation-cap" class="w-6 h-6 text-deepSlate mb-3"></i>
+          <h3 class="text-lg font-bold text-deepSlate">Academics</h3>
+          <p class="text-sm text-earthBrown/80 mt-1">BUET B.Sc., Rangpur Cadet College, coursework & technical skills[cite: 1].</p>
+          <span class="text-xs font-semibold text-deepSlate inline-block mt-3">View Details →</span>
+        </a>
 
-        <p class="text-sm sm:text-base text-earthBrown/95 leading-relaxed">
-          For my undergraduate thesis, I investigated the design and optimization of a Metal-Insulator-Metal (MIM) elliptical nanorod plasmonic biosensor, which was an introduction of mine into the realm of plasmonics and photonics. The study focused on how nanoscale geometry and material selection influence localized surface plasmon resonance (LSPR), with the goal of enhancing sensitivity for biochemical detection. Using advanced numerical modeling, the work explored different physical dimensions, material configurations, and resonance behaviors to establish an optimized biosensor design.
-        </p>
+        <a href="experience.html" class="p-6 rounded-2xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card block">
+          <i data-lucide="briefcase" class="w-6 h-6 text-deepSlate mb-3"></i>
+          <h3 class="text-lg font-bold text-deepSlate">Work Experience</h3>
+          <p class="text-sm text-earthBrown/80 mt-1">Robi Axiata PLC and Banglalink Digital Communications Ltd roles[cite: 1].</p>
+          <span class="text-xs font-semibold text-deepSlate inline-block mt-3">View Roles →</span>
+        </a>
 
-        <!-- Metric badges -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
-          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
-            <span class="text-xs text-earthBrown font-medium block">High Sensitivity</span>
-            <span class="text-lg font-bold text-deepSlate">212.93 nm/RIU</span>[cite: 1]
-          </div>
-          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
-            <span class="text-xs text-earthBrown font-medium block">Figure of Merit (FOM)</span>
-            <span class="text-lg font-bold text-deepSlate">4.65</span>[cite: 1]
-          </div>
-          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
-            <span class="text-xs text-earthBrown font-medium block">Quality Factor (Q-factor)</span>
-            <span class="text-lg font-bold text-deepSlate">17.035</span>[cite: 1]
-          </div>
-        </div>
+        <a href="projects.html" class="p-6 rounded-2xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card block">
+          <i data-lucide="folder-kanban" class="w-6 h-6 text-deepSlate mb-3"></i>
+          <h3 class="text-lg font-bold text-deepSlate">Featured Projects</h3>
+          <p class="text-sm text-earthBrown/80 mt-1">7 builds covering RF patch antennas, ML ECG detection, IoT, and robotics[cite: 1].</p>
+          <span class="text-xs font-semibold text-deepSlate inline-block mt-3">Browse Projects →</span>
+        </a>
 
-        <!-- Technical breakdown grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-earthBrown/95 pt-2">
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Methodology</span>
-            <p>Applied Finite-Difference Time-Domain (FDTD) simulations to model electromagnetic wave interactions within the nanorod array.</p>
-          </div>
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Material Comparison</span>
-            <p>Evaluated Al₂O₃ and TiO₂ as dielectric insulators, analyzing how refractive index changes impact resonance shifts.</p>
-          </div>
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Parameters Studied</span>
-            <p>Varied major/minor axes of the ellipse, slab thickness, central rod inclusion, and periodicity to understand their effects on resonance wavelength and sensitivity.</p>
-          </div>
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Physical Insights</span>
-            <p>Demonstrated strong field localization at nanorod edges, confirming that elliptical geometries outperform circular nanorods in sensing performance.</p>
-          </div>
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Experiments Tried</span>
-            <p>Explored different dielectric thicknesses, tested central rod variations (ultimately discarded for negligible effect), and compared circular vs. elliptical nanorod arrays.</p>
-          </div>
-          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
-            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Impact</span>
-            <p>Validated the potential of optimized MIM plasmonic structures for next-generation biosensors, particularly in medical diagnostics and environmental monitoring.</p>
-          </div>
-        </div>
+        <a href="extracurricular.html" class="p-6 rounded-2xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card block">
+          <i data-lucide="trophy" class="w-6 h-6 text-deepSlate mb-3"></i>
+          <h3 class="text-lg font-bold text-deepSlate">Activities & Leadership</h3>
+          <p class="text-sm text-earthBrown/80 mt-1">BUET EEE Day organization, debate championships, and scholarships[cite: 1].</p>
+          <span class="text-xs font-semibold text-deepSlate inline-block mt-3">Explore Activities →</span>
+        </a>
       </div>
     </section>
-
-    <!-- 3. Academics Section -->
-    <section id="academics" class="space-y-10">
-      <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Academics</h2>
-        <p class="text-sm text-earthBrown mt-1">Formal education, coursework, and technical expertise</p>
-      </div>
-
-      <div class="space-y-8">
-        <!-- 1. BUET Card -->
-        <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-bone/80 border border-deepSlate/15 p-2 flex items-center justify-center flex-shrink-0">
-                <img src="buet-logo.png" alt="BUET Logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/BUET_LOGO.svg/200px-BUET_LOGO.svg.png'" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div>
-                <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">2019 – 2024</span>
-                <h3 class="text-lg sm:text-xl font-bold text-deepSlate">Bangladesh University of Engineering and Technology</h3>
-                <p class="text-sm font-medium text-deepSlate/85 mt-0.5">Bachelor of Science (B.Sc.) in Electrical and Electronic Engineering</p>
-              </div>
-            </div>
-            <div class="flex flex-wrap sm:flex-col items-start sm:items-end gap-2 text-xs">
-              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-deepSlate font-semibold">CGPA: 3.18 / 4.00</span>
-              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-earthBrown font-medium">Credit Hours: 157.5</span>
-            </div>
-          </div>
-
-          <!-- Key Courses Taken -->
-          <div class="space-y-3">
-            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Key Courses Taken</h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Processing & Fabrication Technology</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Microprocessor & Embedded System</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Optical Communication</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Digital Electronics</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Electrical Properties of Materials</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Solid State Device</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Power Electronics</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Control System I</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Digital Signal Processing I</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Engineering Electromagnetics</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Microwave Engineering</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Robotics & Automation</span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Continuous Signals & Linear Systems</span>
-            </div>
-          </div>
-
-          <!-- Technical Expertise -->
-          <div class="space-y-3 pt-2">
-            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Technical Expertise</h4>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
-                <span class="font-bold text-deepSlate block mb-1.5">Programming Languages</span>
-                <p class="text-earthBrown leading-relaxed">Python, Matlab, Verilog HDL, C, C++, SQL, LaTeX</p>
-              </div>
-              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
-                <span class="font-bold text-deepSlate block mb-1.5">Simulation Software</span>
-                <p class="text-earthBrown leading-relaxed">Matlab Simulink, COMSOL Multiphysics, ANSYS Lumerical (FDTD, MODE, CHARGE, INTERCONNECT), Proteus, PSAF</p>
-              </div>
-              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
-                <span class="font-bold text-deepSlate block mb-1.5">Other Tools</span>
-                <p class="text-earthBrown leading-relaxed">Microsoft Office Suite, Power Automate, AutoCAD, Power BI, Google Data Studio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Rangpur Cadet College Card -->
-        <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
-            <div class="flex items-center gap-4">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-bone/80 border border-deepSlate/15 p-2 flex items-center justify-center flex-shrink-0">
-                <img src="rcc-logo.png" alt="Rangpur Cadet College Logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Rangpur_Cadet_College_monogram.svg/200px-Rangpur_Cadet_College_monogram.svg.png'" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div>
-                <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">2012 – 2018</span>
-                <h3 class="text-lg sm:text-xl font-bold text-deepSlate">Rangpur Cadet College</h3>
-                <p class="text-sm font-medium text-deepSlate/85 mt-0.5">Higher Secondary Certificate & Secondary School Certificate</p>
-              </div>
-            </div>
-            <div class="flex flex-wrap sm:flex-col items-start sm:items-end gap-1.5 text-xs">
-              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-deepSlate font-semibold">HSC: GPA 5.00 / 5.00 (Board Merit Scholarship)</span>
-              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-earthBrown font-medium">SSC: GPA 5.00 / 5.00</span>
-            </div>
-          </div>
-
-          <!-- Participations -->
-          <div class="space-y-3">
-            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Participations & Competitions</h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
-                <i data-lucide="trophy" class="w-3.5 h-3.5 text-earthBrown"></i> Inter House Football Championship
-              </span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
-                <i data-lucide="target" class="w-3.5 h-3.5 text-earthBrown"></i> Indoor Games Competition
-              </span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
-                <i data-lucide="award" class="w-3.5 h-3.5 text-earthBrown"></i> Basketball Championship
-              </span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
-                <i data-lucide="mic" class="w-3.5 h-3.5 text-earthBrown"></i> Debate Competition
-              </span>
-              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
-                <i data-lucide="volume-2" class="w-3.5 h-3.5 text-earthBrown"></i> Public Speaking
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. Job Experience Section -->
-    <section id="experience" class="space-y-12">
-      <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Work Experience</h2>
-        <p class="text-sm text-earthBrown mt-1">Industry roles in telecommunications & technology management</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Experience Card 1: Robi Axiata -->
-        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card">
-          <div class="flex justify-between items-start">
-            <div>
-              <h3 class="text-xl font-bold text-deepSlate">Senior Associate</h3>[cite: 1]
-              <p class="text-xs text-earthBrown font-medium mt-0.5">Infrastructure & QoS Policy and Technical Support</p>[cite: 1]
-              <p class="text-sm font-semibold text-deepSlate/80 mt-1">Robi Axiata PLC</p>[cite: 1]
-            </div>
-            <span class="text-xs text-deepSlate px-2.5 py-1 rounded bg-bone border border-deepSlate/15 whitespace-nowrap font-medium">Feb 2025 – Present</span>[cite: 1]
-          </div>
-          <ul class="mt-5 space-y-2.5 text-sm text-earthBrown">
-            <li class="flex items-start gap-2">
-              <span class="text-deepSlate font-bold">›</span> Manage telecom infrastructure, spectrum acquisition, and international benchmark studies supporting spectrum policy advocacy[cite: 1].
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-deepSlate font-bold">›</span> Ensure compliance with network Quality of Service (QoS) regulations and telecom licensing obligations[cite: 1].
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-deepSlate font-bold">›</span> Supervise technical complaint management workflows for rapid resolution across networks[cite: 1].
-            </li>
-          </ul>
-        </div>
-
-        <!-- Experience Card 2: Banglalink -->
-        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all hover:-translate-y-1 shadow-earth-card">
-          <div class="flex justify-between items-start">
-            <div>
-              <h3 class="text-xl font-bold text-deepSlate">Digitalyst Intern</h3>[cite: 1]
-              <p class="text-xs text-earthBrown font-medium mt-0.5">Technology Financial Management</p>[cite: 1]
-              <p class="text-sm font-semibold text-deepSlate/80 mt-1">Banglalink Digital Communications Ltd.</p>[cite: 1]
-            </div>
-            <span class="text-xs text-deepSlate px-2.5 py-1 rounded bg-bone border border-deepSlate/15 whitespace-nowrap font-medium">May 2024 – Aug 2024</span>[cite: 1]
-          </div>
-          <ul class="mt-5 space-y-2.5 text-sm text-earthBrown">
-            <li class="flex items-start gap-2">
-              <span class="text-deepSlate font-bold">›</span> Assisted core operations in Banglalink's major nationwide telecom tower handover to Summit Towers Ltd[cite: 1].
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-deepSlate font-bold">›</span> Streamlined documentation, asset data tracking, and vendor coordination to optimize project execution workflows[cite: 1].
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Projects Section (Updated with 7 Projects & Photos) -->
-    <section id="projects" class="space-y-12">
-      <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Featured Projects</h2>
-        <p class="text-sm text-earthBrown mt-1">Embedded systems, machine learning, IoT, RF/antenna, and robotics builds</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-        <!-- Project 1: Health Monitoring System for Infants -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-infant-health.jpg" alt="Health Monitoring System for Infants" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">Health Monitoring System for Infants</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Designed to simultaneously track temperature and heart rate of infants for real-time monitoring of critical parameters. Built entirely with 74 series basic ICs and sensors, balancing power consumption, signal conditioning, accuracy, cost, and clinical reliability standards.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">74 Series ICs</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Biomedical Sensors</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Circuit Design</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://github.com/HimadriPanthadas/Heallth-Monitoring-System-for-Infants" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="github" class="w-4 h-4"></i> View on GitHub →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 2: Self Balancing Bike Using PID -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-self-balancing-bike.jpg" alt="Self Balancing Bike Using PID" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">Self Balancing Bike Using PID</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Balanced a 3D-printed bike utilizing a reaction wheel to generate angular counter-momentum acting like a stabilizing pendulum. Utilized an MPU sensor for real-time orientation and DC motor control, tuned with a PID controller for dynamic stabilization.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">PID Tuning</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">MPU6050</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Reaction Wheel</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Control Systems</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://drive.google.com/file/d/1UFRRykWBDoI8Ex-VBlf-sG8XjzFLLrHP/view" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="external-link" class="w-4 h-4"></i> View Project Video / Report →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 3: Novel Multiband Microstrip Patch Antenna -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-patch-antenna.jpg" alt="Novel Multiband Microstrip Patch Antenna" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544197150-b99a580bb7a8?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">Novel Multiband Microstrip Patch Antenna</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Designed and studied radiation patterns and efficiencies of a MIMO antenna with three resonant peaks: 23.9 GHz (radio astronomy), 35.5 GHz (radio location), and 70.9 GHz (5G communication), achieving dedicated multiband functionality in a compact form factor.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ANSYS HFSS</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">5G mmWave</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">MIMO Antenna</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://docs.google.com/presentation/d/1vquX7yBAykxQlr3cIfaj7kxkRvs0Qdo3/edit?usp=drivesdk&ouid=109082213126500722372&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="presentation" class="w-4 h-4"></i> View Presentation →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 4: IoT Based Fall Detection System -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-fall-detection.jpg" alt="IoT Based Fall Detection System" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">IoT Based Fall Detection System</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Engineered an automated emergency response system designed for individuals with mobility impairments and seniors. It continuously monitors movement patterns, detects sudden fall events, pinpoints user location, and dispatches instant SOS alerts to caregivers.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">IoT & GPS</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">IMU Sensors</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">SOS Alerting</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://drive.google.com/drive/folders/1jHgB-K7qf2K_bZSuXHuarYbFKHPeBO48?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="folder" class="w-4 h-4"></i> View Project Files →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 5: BLDC Motor Controller -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-bldc-motor.jpg" alt="BLDC Motor Controller" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">BLDC Motor Controller with Reverse Control</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Developed a brushless DC motor driver engineered for precise speed, torque, and bidirectional control. Features an integrated commutation management circuit ensuring smooth forward/reverse phase transitions, robust current stability, and high operational efficiency.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Power Electronics</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Motor Commutation</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Hardware Driver</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://github.com/HimadriPanthadas/BLDC_motor_driver" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="github" class="w-4 h-4"></i> View on GitHub →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 6: Classification of Heartbeat from ECG Data -->
-        <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
-          <div>
-            <div class="h-52 overflow-hidden bg-deepSlate/5 relative">
-              <img src="project-ecg-heartbeat.jpg" alt="Classification of Heartbeat from ECG Data" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1530497610245-94d3c16cda28?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-6 space-y-3">
-              <h3 class="text-xl font-bold text-deepSlate">Classification of Heartbeat from ECG Data</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Engineered a machine learning pipeline to process electrocardiogram (ECG) waveforms and detect arrhythmias. Evaluated both SVM and KNN models on biometric signals, achieving reliable heartbeat classification using the optimized K-Nearest Neighbors architecture.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Python</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">KNN / SVM</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Signal Processing</span>
-              </div>
-            </div>
-          </div>
-          <div class="p-6 pt-0">
-            <a href="https://drive.google.com/file/d/1UPw7_GNcjfnzqLJ2dQK81eFjBYf3XOfw/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-              <i data-lucide="file-text" class="w-4 h-4"></i> View Report / Presentation →
-            </a>
-          </div>
-        </div>
-
-        <!-- Project 7: Smart Home Delivery Box (Full-width spanning card) -->
-        <div class="group md:col-span-2 rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col md:flex-row justify-between">
-          <div class="md:w-5/12 h-64 md:h-auto overflow-hidden bg-deepSlate/5 relative">
-            <img src="project-smart-delivery.jpg" alt="Smart Home Delivery Box" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558002038-1055907df827?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="md:w-7/12 p-6 sm:p-8 space-y-4 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full border border-deepSlate/15 bg-bone text-deepSlate text-[11px] font-semibold tracking-wide">
-                Industrial IoT Project
-              </div>
-              <h3 class="text-xl sm:text-2xl font-bold text-deepSlate">Smart Home Delivery Box</h3>
-              <p class="text-sm text-earthBrown/95 leading-relaxed">
-                Designed and implemented an automated IoT delivery locker integrating ESP32 and Arduino Nano controllers, OTP-based authentication, and Telegram API alerts. Features load sensors, sonar detection, keypad access, automated 12V electromagnetic lock management, and anomaly detection engineered for low-power last-mile delivery.
-              </p>
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ESP32 & Arduino</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Telegram API</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">OTP Authentication</span>
-                <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Sensors & Relays</span>
-              </div>
-            </div>
-            <div class="pt-2">
-              <a href="https://drive.google.com/file/d/1saK8dmbEtRn78EHM_ot5jk5EY6bHMbVJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
-                <i data-lucide="file-text" class="w-4 h-4"></i> View Documentation & Demo →
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 6. Extra-Curricular Activities -->
-    <section id="extracurricular" class="space-y-12">
-      <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Leadership & Activities</h2>
-        <p class="text-sm text-earthBrown mt-1">Competitions, organizing roles, and community initiatives</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <!-- Activity 1 -->
-        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
-          <i data-lucide="calendar" class="w-6 h-6 text-deepSlate mb-4"></i>
-          <h3 class="text-lg font-semibold text-deepSlate">EEE Day 2024 Organizer</h3>[cite: 1]
-          <p class="text-xs text-earthBrown font-medium mt-1">BUET EEE Department</p>[cite: 1]
-          <p class="text-sm text-earthBrown mt-3">Organized and managed high-impact flagship events in collaboration with Grameenphone, Huawei, and Fiber@Home[cite: 1].</p>
-        </div>
-
-        <!-- Activity 2 -->
-        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
-          <i data-lucide="award" class="w-6 h-6 text-deepSlate mb-4"></i>
-          <h3 class="text-lg font-semibold text-deepSlate">ISCEA PTAK Scholarship</h3>[cite: 1]
-          <p class="text-xs text-earthBrown font-medium mt-1">Prize Winner</p>[cite: 1]
-          <p class="text-sm text-earthBrown mt-3">Awarded a competitive scholarship for the Certified Supply Chain Analyst (CSCA) program based on competition performance[cite: 1].</p>
-        </div>
-
-        <!-- Activity 3 -->
-        <div class="p-6 rounded-xl bg-white/70 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card">
-          <i data-lucide="mic" class="w-6 h-6 text-deepSlate mb-4"></i>
-          <h3 class="text-lg font-semibold text-deepSlate">Inter Faculty Debate</h3>[cite: 1]
-          <p class="text-xs text-earthBrown font-medium mt-1">BUET Debating Club</p>[cite: 1]
-          <p class="text-sm text-earthBrown mt-3">Represented the Faculty of Electrical and Electronic Engineering in the 14th Inter Faculty Debate Championship[cite: 1].</p>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- Minimal Footer -->
   <footer class="border-t border-deepSlate/15 py-8 text-center text-xs text-earthBrown">
     <p>© 2026 Md. Fadel Faruk. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
