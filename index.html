@@ -192,29 +192,112 @@
     </section>
 
     <!-- 3. Academics Section -->
-    <section id="academics" class="space-y-12">
+    <section id="academics" class="space-y-10">
       <div class="border-l-2 border-deepSlate pl-4">
         <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Academics</h2>
-        <p class="text-sm text-earthBrown mt-1">Formal education & certifications</p>
+        <p class="text-sm text-earthBrown mt-1">Formal education, coursework, and technical expertise</p>
       </div>
 
-      <div class="relative border-l border-deepSlate/20 ml-4 space-y-10 pl-8">
-        <!-- Academic Item 1: BUET -->
-        <div class="relative">
-          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-deepSlate bg-bone"></div>
-          <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold">Apr 2019 – Jul 2024</span>[cite: 1]
-          <h3 class="text-xl font-bold text-deepSlate mt-1">B.Sc. in Electrical and Electronic Engineering</h3>[cite: 1]
-          <p class="text-sm font-medium text-deepSlate/85">Bangladesh University of Engineering and Technology (BUET) | CGPA: 3.18 / 4.00</p>[cite: 1]
-          <p class="text-sm text-earthBrown mt-2">Comprehensive curriculum covering Optical Communication, Microwave Engineering, Electromagnetics, Digital Signal Processing, and Solid State Devices[cite: 1].</p>
+      <div class="space-y-8">
+        <!-- 1. BUET Card -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-bone/80 border border-deepSlate/15 p-2 flex items-center justify-center flex-shrink-0">
+                <img src="buet-logo.png" alt="BUET Logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/BUET_LOGO.svg/200px-BUET_LOGO.svg.png'" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">2019 – 2024</span>
+                <h3 class="text-lg sm:text-xl font-bold text-deepSlate">Bangladesh University of Engineering and Technology</h3>
+                <p class="text-sm font-medium text-deepSlate/85 mt-0.5">Bachelor of Science (B.Sc.) in Electrical and Electronic Engineering</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-col items-start sm:items-end gap-2 text-xs">
+              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-deepSlate font-semibold">CGPA: 3.18 / 4.00</span>
+              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-earthBrown font-medium">Credit Hours: 157.5</span>
+            </div>
+          </div>
+
+          <!-- Key Courses Taken -->
+          <div class="space-y-3">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Key Courses Taken</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Processing & Fabrication Technology</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Microprocessor & Embedded System</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Optical Communication</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Digital Electronics</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Electrical Properties of Materials</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Solid State Device</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Power Electronics</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Control System I</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Digital Signal Processing I</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Engineering Electromagnetics</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Microwave Engineering</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Robotics & Automation</span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate">Continuous Signals & Linear Systems</span>
+            </div>
+          </div>
+
+          <!-- Technical Expertise -->
+          <div class="space-y-3 pt-2">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Technical Expertise</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
+                <span class="font-bold text-deepSlate block mb-1.5">Programming Languages</span>
+                <p class="text-earthBrown leading-relaxed">Python, Matlab, Verilog HDL, C, C++, SQL, LaTeX</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
+                <span class="font-bold text-deepSlate block mb-1.5">Simulation Software</span>
+                <p class="text-earthBrown leading-relaxed">Matlab Simulink, COMSOL Multiphysics, ANSYS Lumerical (FDTD, MODE, CHARGE, INTERCONNECT), Proteus, PSAF</p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-bone/60 border border-deepSlate/10">
+                <span class="font-bold text-deepSlate block mb-1.5">Other Tools</span>
+                <p class="text-earthBrown leading-relaxed">Microsoft Office Suite, Power Automate, AutoCAD, Power BI, Google Data Studio</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Academic Item 2: Rangpur Cadet College -->
-        <div class="relative">
-          <div class="absolute -left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-earthBrown bg-bone"></div>
-          <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold">Mar 2012 – May 2018</span>[cite: 1]
-          <h3 class="text-xl font-bold text-deepSlate mt-1">Higher Secondary Certificate (HSC) & SSC</h3>[cite: 1]
-          <p class="text-sm font-medium text-deepSlate/85">Rangpur Cadet College | GPA: 5.00 / 5.00 (Both)</p>[cite: 1]
-          <p class="text-sm text-earthBrown mt-2">Recipient of the Merit Scholarship in Higher Secondary Certificate Examination[cite: 1].</p>
+        <!-- 2. Rangpur Cadet College Card -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-bone/80 border border-deepSlate/15 p-2 flex items-center justify-center flex-shrink-0">
+                <img src="rcc-logo.png" alt="Rangpur Cadet College Logo" onerror="this.src='https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Rangpur_Cadet_College_monogram.svg/200px-Rangpur_Cadet_College_monogram.svg.png'" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">2012 – 2018</span>
+                <h3 class="text-lg sm:text-xl font-bold text-deepSlate">Rangpur Cadet College</h3>
+                <p class="text-sm font-medium text-deepSlate/85 mt-0.5">Higher Secondary Certificate & Secondary School Certificate</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-col items-start sm:items-end gap-1.5 text-xs">
+              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-deepSlate font-semibold">HSC: GPA 5.00 / 5.00 (Board Merit Scholarship)</span>
+              <span class="px-3 py-1 rounded-full bg-bone border border-deepSlate/15 text-earthBrown font-medium">SSC: GPA 5.00 / 5.00</span>
+            </div>
+          </div>
+
+          <!-- Participations -->
+          <div class="space-y-3">
+            <h4 class="text-xs uppercase tracking-wider font-semibold text-deepSlate">Participations & Competitions</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
+                <i data-lucide="trophy" class="w-3.5 h-3.5 text-earthBrown"></i> Inter House Football Championship
+              </span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
+                <i data-lucide="target" class="w-3.5 h-3.5 text-earthBrown"></i> Indoor Games Competition
+              </span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-earthBrown"></i> Basketball Championship
+              </span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
+                <i data-lucide="mic" class="w-3.5 h-3.5 text-earthBrown"></i> Debate Competition
+              </span>
+              <span class="text-xs px-3 py-1 rounded-md bg-bone/80 border border-deepSlate/10 text-deepSlate flex items-center gap-1.5">
+                <i data-lucide="volume-2" class="w-3.5 h-3.5 text-earthBrown"></i> Public Speaking
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
