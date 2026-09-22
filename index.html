@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Fadel Faruk | Portfolio</title>
+  <title>Md. Fadel Faruk | Portfolio</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +31,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -52,65 +52,150 @@
       <a href="#" class="text-xl font-bold tracking-tight text-deepSlate hover:text-earthBrown transition-colors">
         FADEL<span class="text-earthBrown">.</span>
       </a>
-      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
         <a href="#about" class="text-deepSlate/80 hover:text-deepSlate transition-colors">About</a>
+        <a href="#research" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Research</a>
         <a href="#academics" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Academics</a>
         <a href="#experience" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Experience</a>
         <a href="#projects" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Projects</a>
         <a href="#extracurricular" class="text-deepSlate/80 hover:text-deepSlate transition-colors">Activities</a>
       </div>
-      <a href="#projects" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone bg-deepSlate rounded-md shadow-sm hover:bg-earthBrown transition-all">
-        View Work
+      <a href="https://drive.google.com/file/d/1j78e1rBoakk9E5yI0I3NkWvwenQ_srrJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone bg-deepSlate rounded-md shadow-sm hover:bg-earthBrown transition-all">
+        <i data-lucide="download" class="w-3.5 h-3.5"></i> Download CV
       </a>
     </div>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-36">
+  <main class="max-w-6xl mx-auto px-6 pt-28 sm:pt-36 pb-24 space-y-28 sm:space-y-36">
 
-    <!-- 1. Hero Section -->
+    <!-- 1. Hero / Intro Section -->
     <section id="about" class="min-h-[75vh] flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-      <div class="w-full md:w-3/5 space-y-6">
+      <div class="w-full md:w-3/5 space-y-5">
         <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-deepSlate/15 bg-white/70 text-deepSlate text-xs tracking-wide shadow-sm">
           <span class="w-2 h-2 rounded-full bg-earthBrown animate-pulse"></span>
           Electrical & Electronic Engineer
         </div>
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-deepSlate leading-tight">
-          Hi, I'm <span class="text-earthBrown">Md Fadel Faruk</span>[cite: 1]
-        </h1>
-        <p class="text-lg text-earthBrown/90 leading-relaxed font-normal">
-          BUET graduate in Electrical and Electronic Engineering specializing in telecom infrastructure, spectrum and QoS policy, plasmonic biosensors, and RF/microwave engineering[cite: 1].
+        
+        <div>
+          <span class="text-base sm:text-lg font-medium text-earthBrown/80 block">Hi! Welcome to my corner of the web!</span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-deepSlate tracking-tight mt-1 leading-tight">
+            This is <span class="text-earthBrown">Md. Fadel Faruk</span>
+          </h1>
+        </div>
+
+        <p class="text-base sm:text-lg text-earthBrown/95 leading-relaxed font-normal">
+          An Electrical and Electronic Engineering graduate from Bangladesh University of Engineering and Technology (BUET). Currently I am working for Robi Axiata PLC., the second largest mobile operator in the country.
         </p>
-        <div class="flex items-center gap-4 pt-2">
-          <a href="#projects" class="px-6 py-3 rounded-lg bg-deepSlate text-bone font-semibold hover:bg-earthBrown transition-all shadow-md">
-            Explore My Work
+
+        <p class="text-sm sm:text-base text-earthBrown/90 leading-relaxed font-normal">
+          With a strong foundation in technology and industry experience, I constantly strive to grow both personally and professionally, guided by a simple mantra: 
+          <em class="text-deepSlate font-medium block mt-1">"Driven to excel, diligent in effort, adaptable to every challenge."</em>
+        </p>
+
+        <div class="flex flex-wrap items-center gap-3.5 pt-2">
+          <a href="https://drive.google.com/file/d/1j78e1rBoakk9E5yI0I3NkWvwenQ_srrJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-deepSlate text-bone text-sm font-semibold hover:bg-earthBrown transition-all shadow-md">
+            <i data-lucide="file-text" class="w-4 h-4"></i> Download CV
           </a>
-          <a href="#experience" class="px-6 py-3 rounded-lg border border-deepSlate/30 text-deepSlate hover:bg-deepSlate hover:text-bone transition-all">
-            View Experience
+          <a href="#research" class="px-5 py-2.5 rounded-lg border border-deepSlate/30 text-deepSlate text-sm font-medium hover:bg-deepSlate hover:text-bone transition-all">
+            Explore Research
           </a>
         </div>
-        <!-- Contact & Links -->
-        <div class="flex flex-wrap items-center gap-6 pt-4 text-sm text-earthBrown">
-          <a href="mailto:fadelfaruk1864@gmail.com" class="flex items-center gap-2 hover:text-deepSlate transition-colors">
-            <i data-lucide="mail" class="w-4 h-4 text-deepSlate"></i> fadelfaruk1864@gmail.com[cite: 1]
+
+        <!-- Contact Info -->
+        <div class="flex flex-wrap items-center gap-6 pt-3 text-sm text-earthBrown border-t border-deepSlate/10">
+          <a href="mailto:fadelfaruk1864@gmail.com" class="flex items-center gap-2 text-deepSlate hover:text-earthBrown transition-colors font-medium">
+            <i data-lucide="mail" class="w-4 h-4 text-earthBrown"></i> fadelfaruk1864@gmail.com
           </a>
-          <a href="https://linkedin.com/in/md-fadel-faruk" target="_blank" class="flex items-center gap-2 hover:text-deepSlate transition-colors">
-            <i data-lucide="linkedin" class="w-4 h-4 text-deepSlate"></i> md-fadel-faruk[cite: 1]
+          <a href="https://www.linkedin.com/in/md-fadel-faruk/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-deepSlate hover:text-earthBrown transition-colors font-medium">
+            <i data-lucide="linkedin" class="w-4 h-4 text-earthBrown"></i> md-fadel-faruk
           </a>
         </div>
       </div>
+
       <div class="w-full md:w-2/5 flex justify-center">
-        <div class="relative w-64 h-64 sm:w-72 sm:h-72">
+        <div class="relative w-60 h-60 sm:w-72 sm:h-72">
           <div class="absolute inset-0 rounded-2xl bg-earthBrown/10 blur-xl"></div>
-          <img src="profile.jpg" alt="Md Fadel Faruk" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=600&h=600'" class="relative w-full h-full object-cover rounded-2xl border-2 border-deepSlate/20 shadow-earth-card" />
+          <img src="profile.jpg" alt="Md. Fadel Faruk" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=600&h=600'" class="relative w-full h-full object-cover rounded-2xl border-2 border-deepSlate/20 shadow-earth-card" />
         </div>
       </div>
     </section>
 
-    <!-- 2. Academics Section -->
+    <!-- 2. Research Experience Section -->
+    <section id="research" class="space-y-8">
+      <div class="border-l-2 border-deepSlate pl-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Research Experience</h2>
+        <p class="text-sm text-earthBrown mt-1">Undergraduate thesis, simulations, and optical nanostructures</p>
+      </div>
+
+      <div class="p-6 sm:p-8 rounded-2xl bg-white/80 border border-deepSlate/10 shadow-earth-card space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-deepSlate/10 pb-5">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold block">Undergraduate Thesis • Oct 2023 – Jul 2024[cite: 1]</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-deepSlate mt-1">
+              Design and Performance Analysis of Elliptical Nanorod Array Plasmonic Biosensor[cite: 1]
+            </h3>
+            <p class="text-xs sm:text-sm text-deepSlate/80 mt-0.5">Bangladesh University of Engineering and Technology (BUET)[cite: 1]</p>
+          </div>
+          <a href="https://docs.google.com/presentation/d/11_8cqJYn8cDRZRL3HaJYhNfACrc1NcX9/edit?usp=drivesdk&ouid=109082213126500722372&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-deepSlate text-bone text-xs sm:text-sm font-semibold hover:bg-earthBrown transition-all shadow-sm whitespace-nowrap">
+            <i data-lucide="presentation" class="w-4 h-4"></i> View Presentation
+          </a>
+        </div>
+
+        <p class="text-sm sm:text-base text-earthBrown/95 leading-relaxed">
+          For my undergraduate thesis, I investigated the design and optimization of a Metal-Insulator-Metal (MIM) elliptical nanorod plasmonic biosensor, which was an introduction of mine into the realm of plasmonics and photonics. The study focused on how nanoscale geometry and material selection influence localized surface plasmon resonance (LSPR), with the goal of enhancing sensitivity for biochemical detection. Using advanced numerical modeling, the work explored different physical dimensions, material configurations, and resonance behaviors to establish an optimized biosensor design.
+        </p>
+
+        <!-- Metric badges -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
+            <span class="text-xs text-earthBrown font-medium block">High Sensitivity</span>
+            <span class="text-lg font-bold text-deepSlate">212.93 nm/RIU</span>[cite: 1]
+          </div>
+          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
+            <span class="text-xs text-earthBrown font-medium block">Figure of Merit (FOM)</span>
+            <span class="text-lg font-bold text-deepSlate">4.65</span>[cite: 1]
+          </div>
+          <div class="p-3.5 rounded-xl bg-bone/70 border border-deepSlate/10">
+            <span class="text-xs text-earthBrown font-medium block">Quality Factor (Q-factor)</span>
+            <span class="text-lg font-bold text-deepSlate">17.035</span>[cite: 1]
+          </div>
+        </div>
+
+        <!-- Technical breakdown grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-earthBrown/95 pt-2">
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Methodology</span>
+            <p>Applied Finite-Difference Time-Domain (FDTD) simulations to model electromagnetic wave interactions within the nanorod array.</p>
+          </div>
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Material Comparison</span>
+            <p>Evaluated Al₂O₃ and TiO₂ as dielectric insulators, analyzing how refractive index changes impact resonance shifts.</p>
+          </div>
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Parameters Studied</span>
+            <p>Varied major/minor axes of the ellipse, slab thickness, central rod inclusion, and periodicity to understand their effects on resonance wavelength and sensitivity.</p>
+          </div>
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Physical Insights</span>
+            <p>Demonstrated strong field localization at nanorod edges, confirming that elliptical geometries outperform circular nanorods in sensing performance.</p>
+          </div>
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Experiments Tried</span>
+            <p>Explored different dielectric thicknesses, tested central rod variations (ultimately discarded for negligible effect), and compared circular vs. elliptical nanorod arrays.</p>
+          </div>
+          <div class="space-y-1.5 p-4 rounded-xl bg-bone/40 border border-deepSlate/10">
+            <span class="font-semibold text-deepSlate text-xs uppercase tracking-wider block">Impact</span>
+            <p>Validated the potential of optimized MIM plasmonic structures for next-generation biosensors, particularly in medical diagnostics and environmental monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Academics Section -->
     <section id="academics" class="space-y-12">
       <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Academics</h2>
-        <p class="text-sm text-earthBrown mt-1">Educational qualifications and thesis research</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Academics</h2>
+        <p class="text-sm text-earthBrown mt-1">Formal education & certifications</p>
       </div>
 
       <div class="relative border-l border-deepSlate/20 ml-4 space-y-10 pl-8">
@@ -120,11 +205,7 @@
           <span class="text-xs uppercase tracking-wider text-earthBrown font-semibold">Apr 2019 – Jul 2024</span>[cite: 1]
           <h3 class="text-xl font-bold text-deepSlate mt-1">B.Sc. in Electrical and Electronic Engineering</h3>[cite: 1]
           <p class="text-sm font-medium text-deepSlate/85">Bangladesh University of Engineering and Technology (BUET) | CGPA: 3.18 / 4.00</p>[cite: 1]
-          <div class="mt-3 p-5 rounded-lg bg-white/60 border border-deepSlate/10 text-sm text-earthBrown space-y-2 shadow-sm">
-            <p class="font-semibold text-deepSlate text-xs uppercase tracking-wide">Undergraduate Thesis (Oct 2023 – Jul 2024):</p>[cite: 1]
-            <p><strong class="text-deepSlate">Design and Performance Analysis of Elliptical Nanorod Array Plasmonic Biosensor</strong></p>[cite: 1]
-            <p>Developed a Metal-Insulator-Metal (MIM) based elliptical nanorod plasmonic biosensor using FDTD simulations[cite: 1]. Optimized structural parameters to enhance localized surface plasmon resonance[cite: 1]. Achieved sensitivity of 212.93 nm/RIU, FOM of 4.65, and Q-factor of 17.035 with Al₂O₃ insulator for advanced biochemical detection[cite: 1].</p>
-          </div>
+          <p class="text-sm text-earthBrown mt-2">Comprehensive curriculum covering Optical Communication, Microwave Engineering, Electromagnetics, Digital Signal Processing, and Solid State Devices[cite: 1].</p>
         </div>
 
         <!-- Academic Item 2: Rangpur Cadet College -->
@@ -138,10 +219,10 @@
       </div>
     </section>
 
-    <!-- 3. Job Experience Section -->
+    <!-- 4. Job Experience Section -->
     <section id="experience" class="space-y-12">
       <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Work Experience</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Work Experience</h2>
         <p class="text-sm text-earthBrown mt-1">Industry roles in telecommunications & technology management</p>
       </div>
 
@@ -191,10 +272,10 @@
       </div>
     </section>
 
-    <!-- 4. Projects Section -->
+    <!-- 5. Projects Section -->
     <section id="projects" class="space-y-12">
       <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Featured Projects</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Featured Projects</h2>
         <p class="text-sm text-earthBrown mt-1">Engineering systems, robotics, and RF/microwave designs</p>
       </div>
 
@@ -230,7 +311,7 @@
             <div class="flex flex-wrap gap-2 pt-2">
               <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Arduino</span>[cite: 1]
               <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ESP32-CAM</span>[cite: 1]
-              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Robotics</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Robotics</span>[cite: 1]
             </div>
           </div>
         </div>
@@ -273,10 +354,10 @@
       </div>
     </section>
 
-    <!-- 5. Extra-Curricular Activities -->
+    <!-- 6. Extra-Curricular Activities -->
     <section id="extracurricular" class="space-y-12">
       <div class="border-l-2 border-deepSlate pl-4">
-        <h2 class="text-3xl font-bold text-deepSlate tracking-wide">Leadership & Activities</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-deepSlate tracking-wide">Leadership & Activities</h2>
         <p class="text-sm text-earthBrown mt-1">Competitions, organizing roles, and community initiatives</p>
       </div>
 
@@ -311,7 +392,7 @@
 
   <!-- Minimal Footer -->
   <footer class="border-t border-deepSlate/15 py-8 text-center text-xs text-earthBrown">
-    <p>© 2026 Md Fadel Faruk. Hosted on GitHub Pages.</p>
+    <p>© 2026 Md. Fadel Faruk. All rights reserved.</p>
   </footer>
 
   <script>
