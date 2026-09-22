@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Fadel Faruk | Projects</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bone: '#EFEFE9',
+            deepSlate: '#223030',
+            earthBrown: '#523D35',
+          },
+          boxShadow: {
+            'earth-card': '0 10px 30px -5px rgba(34, 48, 48, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #EFEFE9; color: #523D35; }
+    h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-bone text-earthBrown selection:bg-deepSlate selection:text-bone">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-bone/85 border-b border-deepSlate/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold tracking-tight text-deepSlate hover:text-earthBrown transition-colors">
+        FADEL<span class="text-earthBrown">.</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
+        <a href="index.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Home</a>
+        <a href="research.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Research</a>
+        <a href="academics.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Academics</a>
+        <a href="experience.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Experience</a>
+        <a href="projects.html" class="text-deepSlate font-semibold border-b-2 border-deepSlate pb-0.5">Projects</a>
+        <a href="extracurricular.html" class="text-deepSlate/70 hover:text-deepSlate transition-colors">Activities</a>
+      </div>
+      <a href="https://drive.google.com/file/d/1j78e1rBoakk9E5yI0I3NkWvwenQ_srrJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-bone bg-deepSlate rounded-md shadow-sm hover:bg-earthBrown transition-all">
+        <i data-lucide="download" class="w-3.5 h-3.5"></i> Download CV
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 pt-32 pb-24 space-y-12">
+    <div class="border-l-2 border-deepSlate pl-4">
+      <h1 class="text-3xl sm:text-4xl font-bold text-deepSlate tracking-tight">Project Works</h1>
+      <p class="text-sm text-earthBrown mt-1">Engineering systems, IoT automation, RF multiband antennas, and biomedical classification</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-infant-health.jpg" alt="Health Monitoring System for Infants" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">Health Monitoring System for Infants</h2>
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Designed to simultaneously track temperature and heart rate of infants for real-time monitoring of critical parameters[cite: 1]. Built entirely with 74 series basic ICs and sensors, balancing power consumption, signal conditioning, accuracy, cost, and clinical reliability standards[cite: 1].
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">74 Series ICs</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Biomedical Sensors</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Circuit Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://github.com/HimadriPanthadas/Heallth-Monitoring-System-for-Infants" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="github" class="w-4 h-4"></i> View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-self-balancing-bike.jpg" alt="Self Balancing Bike Using PID" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">Self Balancing Bike Using PID</h2>
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Balanced a 3D-printed bike utilizing a reaction wheel to generate angular counter-momentum acting like a stabilizing pendulum[cite: 1]. Utilized an MPU sensor for real-time orientation and DC motor control, tuned with a PID controller for dynamic stabilization.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">PID Tuning</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">MPU6050</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Reaction Wheel</span>[cite: 1]
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://drive.google.com/file/d/1UFRRykWBDoI8Ex-VBlf-sG8XjzFLLrHP/view" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="external-link" class="w-4 h-4"></i> View Project Video / Report →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-patch-antenna.jpg" alt="Novel Multiband Microstrip Patch Antenna" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544197150-b99a580bb7a8?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">Novel Multiband Microstrip Patch Antenna</h2>[cite: 1]
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Designed and studied radiation patterns and efficiencies of a MIMO antenna with three resonant peaks: 23.9 GHz (radio astronomy), 35.5 GHz (radio location), and 70.9 GHz (5G communication), achieving dedicated multiband functionality in a compact form factor[cite: 1].
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ANSYS HFSS</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">5G mmWave</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">MIMO Antenna</span>[cite: 1]
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://docs.google.com/presentation/d/1vquX7yBAykxQlr3cIfaj7kxkRvs0Qdo3/edit?usp=drivesdk&ouid=109082213126500722372&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="presentation" class="w-4 h-4"></i> View Presentation →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-fall-detection.jpg" alt="IoT Based Fall Detection System" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">IoT Based Fall Detection System</h2>
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Engineered an automated emergency response system designed for individuals with mobility impairments and seniors. It continuously monitors movement patterns, detects sudden fall events, pinpoints user location, and dispatches instant SOS alerts to caregivers.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">IoT & GPS</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">IMU Sensors</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">SOS Alerts</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://drive.google.com/drive/folders/1jHgB-K7qf2K_bZSuXHuarYbFKHPeBO48?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="folder" class="w-4 h-4"></i> View Project Files →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-bldc-motor.jpg" alt="BLDC Motor Controller" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">BLDC Motor Controller with Reverse Control</h2>
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Developed a brushless DC motor driver engineered for precise speed, torque, and bidirectional control. Features an integrated commutation management circuit ensuring smooth forward/reverse phase transitions, robust current stability, and high operational efficiency.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Power Electronics</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Motor Commutation</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Hardware Driver</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://github.com/HimadriPanthadas/BLDC_motor_driver" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="github" class="w-4 h-4"></i> View on GitHub →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="group rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col justify-between">
+        <div>
+          <div class="h-52 overflow-hidden bg-deepSlate/5">
+            <img src="project-ecg-heartbeat.jpg" alt="Classification of Heartbeat from ECG Data" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1530497610245-94d3c16cda28?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-bold text-deepSlate">Classification of Heartbeat from ECG Data</h2>[cite: 1]
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Engineered a machine learning pipeline to process electrocardiogram (ECG) waveforms and detect arrhythmias[cite: 1]. Evaluated both SVM and KNN models on biometric signals, achieving reliable heartbeat classification using the optimized K-Nearest Neighbors architecture.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Python</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">KNN / SVM</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Signal Processing</span>[cite: 1]
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://drive.google.com/file/d/1UPw7_GNcjfnzqLJ2dQK81eFjBYf3XOfw/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+            <i data-lucide="file-text" class="w-4 h-4"></i> View Report / Presentation →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 7 (Spanning) -->
+      <div class="group md:col-span-2 rounded-2xl overflow-hidden bg-white/80 border border-deepSlate/10 hover:border-deepSlate/30 transition-all shadow-earth-card flex flex-col md:flex-row justify-between">
+        <div class="md:w-5/12 h-64 md:h-auto overflow-hidden bg-deepSlate/5">
+          <img src="project-smart-delivery.jpg" alt="Smart Home Delivery Box" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1558002038-1055907df827?fit=crop&w=800&q=80';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="md:w-7/12 p-6 sm:p-8 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full border border-deepSlate/15 bg-bone text-deepSlate text-[11px] font-semibold tracking-wide">
+              Industrial IoT Project[cite: 1]
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-deepSlate">Smart Home Delivery Box</h2>[cite: 1]
+            <p class="text-sm text-earthBrown/95 leading-relaxed">
+              Designed and implemented an automated IoT delivery locker integrating ESP32 and Arduino Nano controllers, OTP-based authentication, and Telegram API alerts[cite: 1]. Features load sensors, sonar detection, keypad access, automated 12V electromagnetic lock management, and anomaly detection engineered for low-power last-mile delivery[cite: 1].
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">ESP32 & Arduino</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">Telegram API</span>[cite: 1]
+              <span class="text-xs px-2.5 py-1 rounded bg-bone border border-deepSlate/15 text-deepSlate font-medium">OTP Authentication</span>[cite: 1]
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://drive.google.com/file/d/1saK8dmbEtRn78EHM_ot5jk5EY6bHMbVJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-deepSlate hover:text-earthBrown transition-colors">
+              <i data-lucide="file-text" class="w-4 h-4"></i> View Documentation & Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-deepSlate/15 py-8 text-center text-xs text-earthBrown">
+    <p>© 2026 Md. Fadel Faruk. All rights reserved.</p>
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
